@@ -3,56 +3,82 @@
 
 <head>
   <title>page title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 
 <body>
 <meta charset=""UTF-8">
+  
 <style>
   * {
     border: 1px red dashed;
+  }
+  html {
+    min-height:100%;
+  }
+  body {
+    min-height:100%;
+    padding-top:40px;
+    padding-bottom:40px;
+    background: linear-gradient(330deg, #5b364f, #753458, #912f5b, #ac2559, #c61750, #dd0443, #f0072f, #ff230a); 
   }
 </style>
 <style>
   .main-container{
     display: flex;
     flex-direction: column;
-    width:200px;
+    max-width:640px;
     padding:30px;
     border: solid blue 5px;
-    margin: 20px;
+    margin: auto;
     align-items: center;
   }
   .image-row{
     width: 50px;
     padding:10px;
     border:solid blue 3px;
-    margin:15px;
+    margin-bottom:20px;
 
   }
   .name-row{
     width: 25px;
     padding:10px;
     border:solid blue 3px;
-    margin:15px;
+    margin-bottom:30px;
   }
   .social-icons-row{
     width: 25px;
     padding:10px;
     border:solid blue 3px;
-    margin:15px;
+    margin-bottom:30px;
   }
   .links-row{
     width: 25px;
     padding:10px;
     border:solid blue 3px;
     margin:15px;
+
+  }
+  .avatar-image{
+    width:128px;
+    height:128px;
+    object-fit:cover;
+    border-radius:128px;
+    border:solid blue 1px;
+  }
+  .thumbnail{
+    width:48px;
+    height:48px;
+    border-radius:48px;
+    object-fit:cover;
   }
 </style>
 
   <div class="main-container">
     
     <div class ="image-row"> 
-    <img src="oldmansea photo">
+    <img class="avatar-image" src="oldmansea photo">
     </div>
     
     <div class = "name-row"> Pat's Link Page 
@@ -60,11 +86,11 @@
     </div>
 
     <div class = "social-icons-row"> 
-    <img src="vbreports_image">  
+    <img class="thumbnail" src="vbreports_image">  
     </div>
 
     <div class = "Links-row"> 
-      <a style="color:blue; font-size: 30px" href="https://vbsf.net/fishing-reports/"
+      <a style="color: rgba(2, 0, 0, 0.912);font-size: 30px" href="https://vbsf.net/fishing-reports/"
       target="_blank"> Fishing Reports </a>
     </div> 
 
