@@ -2,15 +2,12 @@
 <html>
 
 <head>
-  <title>page title</title>
+  <meta charset=""UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pat's link page</title>
 
-</head>
-
-<body>
-<meta charset=""UTF-8">
   
-<style>
+  <style>
   * {
     border: 1px red dashed;
   }
@@ -23,42 +20,39 @@
     padding-bottom:40px;
     background: linear-gradient(330deg, #5b364f, #753458, #912f5b, #ac2559, #c61750, #dd0443, #f0072f, #ff230a); 
   }
-</style>
-<style>
+
   .main-container{
     display: flex;
     flex-direction: column;
     max-width:640px;
     padding:30px;
-    border: solid blue 5px;
     margin: auto;
     align-items: center;
   }
   .image-row{
-    width: 50px;
-    padding:10px;
-    border:solid blue 3px;
     margin-bottom:20px;
+    text-align: center;
 
   }
   .name-row{
-    width: 25px;
-    padding:10px;
-    border:solid blue 3px;
     margin-bottom:30px;
+    text-align:center;
   }
   .social-icons-row{
-    width: 25px;
-    padding:10px;
-    border:solid blue 3px;
     margin-bottom:30px;
+    display: flex;
+    justify-content: space-around;
   }
   .links-row{
     width: 25px;
     padding:10px;
-    border:solid blue 3px;
     margin:15px;
 
+  }
+  .item {
+    margin-bottom: 20px;
+    display:flex;
+    align-items:center;
   }
   .avatar-image{
     width:128px;
@@ -73,25 +67,60 @@
     border-radius:48px;
     object-fit:cover;
   }
-</style>
+  .link-text{
+    text-align: center;
+    flex-grow: 1;
+  }
+  </style>
+</head>
 
+<body>
   <div class="main-container">
     
     <div class ="image-row"> 
     <img class="avatar-image" src="oldmansea photo">
     </div>
     
-    <div class = "name-row"> Pat's Link Page 
-
+    <div class = "name-row"> 
+      Pat's Link Page 
     </div>
 
     <div class = "social-icons-row"> 
-    <img class="thumbnail" src="vbreports_image">  
+      <a href="https://github.com/pbohea" target="_blank">
+        My Github
+      </a>
+      <a href="https://www.nytimes.com/games/wordle/index.html" target="_blank">
+        Wordle
+      </a>
+      <a href="https://www.nytimes.com/games/connections" target="_blank">
+        NYT Connections
+      </a>
+      <a href="https://worldle.teuteuf.fr/" target="_blank">
+        Worldle
+      </a>
+     
     </div>
 
     <div class = "Links-row"> 
-      <a style="color: rgba(2, 0, 0, 0.912);font-size: 30px" href="https://vbsf.net/fishing-reports/"
-      target="_blank"> Fishing Reports </a>
+      <div class="item">
+        <img class="thumbnail" src="vbreports_image">
+        <a class="link-text" href="https://vbsf.net/fishing-reports/"
+        target="_blank"> VB Fishing Reports </a>
+      </div>
+      <div class="item">
+        <img class="thumbnail" src="windfindIMAGE.jpeg">
+        <a class="link-text" href="https://www.windfinder.com/#12/42.4916/-87.8309/2024-12-19T18:00Z/spot" 
+        target="_blank"> WindFinder </a>
+      </div>
+      <div class="item">
+        <img class="thumbnail" src="Youtube.png">
+        <a class="link-text" href="https://www.youtube.com/"
+        target="_blank"> YouTube </a>
+      </div>
+
+
+
+
     </div> 
 
 
