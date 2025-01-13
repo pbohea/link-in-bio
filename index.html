@@ -6,11 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pat's link page</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet"> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+
+
   
   <style>
+  /*
   * {
     border: 1px red dashed;
   }
+  */
   html {
     min-height:100%;
   }
@@ -20,6 +28,7 @@
     padding-bottom:40px;
     background: linear-gradient(330deg, #5b364f, #753458, #912f5b, #ac2559, #c61750, #dd0443, #f0072f, #ff230a); 
     color: rgba(255, 255, 255, 1.0);
+    font-family: "Bodoni Moda SC"
   }
   a {
     color:rgba(255, 255, 255, 1.0);
@@ -37,6 +46,7 @@
   .name-row{
     margin-bottom:30px;
     text-align:center;
+    font-family:"Verdana";
   }
   .social-icons-row{
     margin-bottom:30px;
@@ -54,6 +64,12 @@
     margin-bottom: 20px;
     display:flex;
     align-items:center;
+    background-color: rgba(194, 87, 38, 0.5);
+    border-radius: 1000px;
+    padding:8px;
+    padding-right:53px;
+    box-shadow: 16px 13px 16px 3px rgba(0,0,0,0.75);
+
   }
   .avatar-image{
     width:128px;
@@ -89,16 +105,16 @@
 
     <div class = "social-icons-row"> 
       <a href="https://github.com/pbohea" target="_blank">
-        My Github
+        <i class="fa-brands fa-github"></i>  My Github
       </a>
       <a href="https://www.nytimes.com/games/wordle/index.html" target="_blank">
-        Wordle
+        <i class="fa-solid fa-w"></i>  Wordle
       </a>
       <a href="https://www.nytimes.com/games/connections" target="_blank">
-        NYT Connections
+        <i class="fa-solid fa-puzzle-piece"></i>  NYT Connections
       </a>
       <a href="https://worldle.teuteuf.fr/" target="_blank">
-        Worldle
+        <i class="fa-solid fa-earth-americas"></i>  Worldle
       </a>
      
     </div>
